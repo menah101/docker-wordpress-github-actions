@@ -1,0 +1,17 @@
+name: VULTR_DEPLOY
+
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  Build:
+    run-on: self-hosted
+    
+    steps:
+      - uses: action/checkout/@main
+      - name: Create .env
+        run: echo 'PORT=${{ secrets.PORT }}' > .env
+        
+      - name: Run build
+        run: docker-compose up -d
