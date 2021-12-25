@@ -2,7 +2,7 @@ name: VULTR_DEPLOY
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     
 jobs:
   Build:
