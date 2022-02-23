@@ -1,0 +1,2 @@
+2022-01-20T02:17:06+00:00 CRITICAL syntax error, unexpected 'load_theme_textdomain' (T_STRING) in /var/www/html/wp-content/themes/bs2wooo/functions.php on line 33
+

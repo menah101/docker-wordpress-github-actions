@@ -1,0 +1,8 @@
+2021-12-26T03:47:25+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/html/wp-content/themes/twentytwentyone/functions.php on line 645
+
+2021-12-26T03:47:49+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/html/wp-content/themes/twentytwentyone/functions.php on line 645
+
+2021-12-26T03:48:16+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp-content/themes/twentytwentyone/functions.php on line 647
+
+2021-12-26T03:48:19+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp-content/themes/twentytwentyone/functions.php on line 647
+

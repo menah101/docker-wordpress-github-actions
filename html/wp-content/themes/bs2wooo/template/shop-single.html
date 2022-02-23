@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trang chủ - web bán hàng</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="1.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/font-awesome.css" />
+    <link rel="stylesheet" href="1.css" />
+  </head>
+  <body>
+    <div class="thanhcc text-xs-center text-sm-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#" class="cctop">
+              <i class="fa fa-sign-in"></i>
+              Register
+            </a>
+            <a href="#" class="cctop"> My Account </a>
+            <a href="#" class="cctop">
+              <i class="fa fa-shopping-cart"></i>
+              5 items
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-sm-right text-xs-center text-sm-left">
+              <input
+                type="text"
+                class="form-control tim"
+                placeholder="Tìm kiếm"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HẾT THANH CÔNG CỤ -->
+
+    <div class="menutop">
+      <nav class="navbar navbar-light">
+        <button
+          class="navbar-toggler hidden-lg-up"
+          type="button"
+          data-toggle="collapse"
+          data-target="#exCollapsingNavbar2"
+        ></button>
+        <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.png" alt="LOGO Project 1"
+          /></a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://zing.vn">Trang chủ </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop </a>
+              <ul>
+                <li><a href=""> Shop Men</a></li>
+                <li><a href=""> Shop Women</a></li>
+                <li><a href=""> Shop Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tin tức</a>
+              <ul>
+                <li><a href=""> Shop Men</a></li>
+                <li><a href=""> Shop Women</a></li>
+                <li><a href=""> Shop Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+              <ul>
+                <li><a href=""> Shop Men</a></li>
+                <li><a href=""> Shop Women</a></li>
+                <li><a href=""> Shop Accessories</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- END MENUTOP -->
+
+    <!-- Chua noi dung cua trang shop -->
+    <div class="ktieude text-xs-center">
+      <div class="ktieudetrong">
+        <h2>Sản phẩm chi tiết</h2>
+
+        <nav class="breadcrumb">
+          <a href="">Home</a> &nbsp; / &nbsp; <a href="">Shop</a>
+        </nav>
+      </div>
+    </div>
+    <!-- het khoi tieu de duoi -->
+
+    <!-- San pham -->
+    <div class="sanpham">
+      <div class="container">
+        <div class="row">
+          <div class="images col-sm-6">
+            <a href="" class="bigimage"
+              ><img src="images/sanpham01.png" alt=""
+            /></a>
+            <div class="thumbnails">
+              <a href="" class="anhnho"
+                ><img src="images/sanpham02.png" alt=""
+              /></a>
+              <a href="" class="anhnho"
+                ><img src="images/sanpham03.png" alt=""
+              /></a>
+              <a href="" class="anhnho"
+                ><img src="images/sanpham04.png" alt=""
+              /></a>
+              <a href="" class="anhnho"
+                ><img src="images/sanpham05.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="sumary col-sm-6">
+            <h1 class="product-title">Áo Hoody đen phối đỏ</h1>
+            <p class="price">180000 Đ</p>
+            <div class="description">
+              It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with
+              desktop publishing software like Aldus PageMaker including
+              versions of Lorem Ipsum.
+            </div>
+            <div class="in-stock">Còn 15 sản phẩm trong kho</div>
+            <form action="" class="cart">
+              <div class="quantity">
+                <span class="label">QTY</span>
+                <input type="button" value="-" class="minus" />
+                <input type="number" value="1" class="qty" />
+                <input type="button" value="+" class="plus" />
+                <button class="button btn btn-primary">
+                  Thêm vào giỏ hàng <i class="fa fa-long-arrow-right"></i>
+                </button>
+              </div>
+              <div class="variation">
+                <span class="label">Select Color:</span>
+                <img src="images/mau.png" alt="" />
+              </div>
+            </form>
+          </div>
+          <div class="tabspchitiet col-sm-12">
+            <ul class="tabs">
+              <li class="active"><a href="" class="active"> Description </a></li>
+              <li><a href=""> Addition Info </a></li>
+              <li><a href=""> Review (5) </a></li>
+            </ul>
+
+            <ul class="noidungtabsp">
+              <li>
+                <div id="description" class="tabsanpham active">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries
+                </div>
+              </li>
+              <li>
+                <div id="addition-info" class="tabsanpham">
+                  but also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </li>
+              <li>
+                <div id="review" class="tabsanpham">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                  from a Lorem Ipsum passage, and going through the cites of the
+                  word in classical literature, discovered the undoubtable
+                  source. Lorem Ipsum comes from sections
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="related-products col-sm-12 mt-100">
+            <div class="text-xs-center">
+              <h2 class="kieuchuto">RELATED PRODUCTS</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 text-xs-center">
+                <div class="motsanphamchuan">
+                  <a href="" class="duoi">
+                    <span class="onsale">Sale</span>
+                    <span class="newnew">New</span>
+                    <span class="anh1sp"
+                      ><img src="images/motsp.jpg" alt=""
+                    /></span>
+                    <h3>Hoody Tshirt</h3>
+                    <span class="cat"> Áo Khoác</span>
+                    <div class="price">$65</div>
+                  </a>
+                  <div class="tren">
+                    <a href="">
+                      Thêm vào giỏ hàng
+                      <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 text-xs-center">
+                <div class="motsanphamchuan">
+                  <a href="" class="duoi">
+                    <span class="onsale">Sale</span>
+                    <span class="newnew">New</span>
+                    <span class="anh1sp"
+                      ><img src="images/motsp.jpg" alt=""
+                    /></span>
+                    <h3>Hoody Tshirt</h3>
+                    <span class="cat"> Áo Khoác</span>
+                    <div class="price">$65</div>
+                  </a>
+                  <div class="tren">
+                    <a href="">
+                      Thêm vào giỏ hàng
+                      <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 text-xs-center">
+                <div class="motsanphamchuan">
+                  <a href="" class="duoi">
+                    <span class="onsale">Sale</span>
+                    <span class="newnew">New</span>
+                    <span class="anh1sp"
+                      ><img src="images/motsp.jpg" alt=""
+                    /></span>
+                    <h3>Hoody Tshirt</h3>
+                    <span class="cat"> Áo Khoác</span>
+                    <div class="price">$65</div>
+                  </a>
+                  <div class="tren">
+                    <a href="">
+                      Thêm vào giỏ hàng
+                      <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Het san pham -->
+
+    <footer class="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 cot1">
+            <h3 class="tdfoot">Quick Link</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Shop</a></li>
+                  <li><a href="">Account</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Shop</a></li>
+                  <li><a href="">Account</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 push-sm-1 cot2">
+            <div class="logo text-xs-center">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="mangxh">
+              <ul>
+                <li>
+                  <a href=""><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="thethanhtoan">
+              <ul>
+                <li>
+                  <a href=""><i class="fa fa-cc-visa"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-cc-mastercard"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-cc-mastercard"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-cc-mastercard"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              Copyrights <i class="fa fa-copyright"></i> 2016 VOLTA. All Rights
+              Reserved
+            </div>
+          </div>
+          <div class="col-sm-3 push-sm-1 cot3">
+            <div class="bando">
+              <h3 class="tdfoot">LOCATION</h3>
+              <p>1040, TPHCM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

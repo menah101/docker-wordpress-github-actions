@@ -1,0 +1,1713 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&subset=vietnamese");
+
+a.right.carousel-control {
+}
+
+input.tim {
+  border: 1px solid #ebebeb;
+  border-radius: 0px;
+  padding: 14px 20px;
+  width: 250px;
+  background: url(images/iconsearch.png) no-repeat 92% center;
+  /* margin: auto; */
+  display: inline-block;
+}
+
+input.tim::-webkit-input-placeholder {
+  color: #888;
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+a.cctop {
+  display: inline-block;
+  color: #888;
+  font-family: "Open Sans", sans-serif;
+  line-height: 28px;
+  font-size: 12px;
+  padding-right: 37px;
+  padding-top: 11px;
+}
+
+a.cctop i.fa {
+  padding-right: 8px;
+}
+
+.thanhcc {
+  padding-top: 40px;
+  z-index: 2;
+  position: relative;
+}
+
+.menutop .navbar-light .navbar-nav li > .nav-link {
+  display: inline;
+  font-size: 14px;
+  color: #444;
+  font-family: Open Sans, sans-serif;
+  border-right: 1px solid #ebebeb;
+  padding: 4px 32px;
+}
+
+.menutop .navbar-light .navbar-nav li > .nav-link:hover {
+  color: black;
+}
+
+.menutop ul .nav-item {
+  float: none;
+  display: inline-block;
+  position: relative;
+  /* left: 0px; */
+  /* top: 0px; */
+}
+
+.menutop ul li ul {
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  left: 2px;
+  top: 56px;
+  width: 168px;
+  background: white;
+  padding: 5px 13px;
+  transition: 0.4s;
+  padding-top: 17px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menutop ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 26px;
+}
+
+.menutop .navbar-nav .nav-item ul a {
+  color: gray;
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  padding-left: 16px;
+}
+
+.menutop .navbar-nav .nav-item ul a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.menutop ul.nav.navbar-nav {
+  text-align: center;
+  display: block;
+  border-top: 1px solid #ebebeb;
+  margin-top: 9px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.menutop a.navbar-brand {
+  display: block;
+  float: none;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: -83px;
+}
+
+/*CSS CHO PHAN SLIDE */
+.motslide {
+  position: relative;
+}
+.motslide .container2 {
+  position: absolute;
+  top: 19%;
+  right: 6%;
+  width: 87%;
+  font-family: "open sans", sans-serif;
+  text-align: center;
+  z-index: 3;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background: transparent;
+  color: black;
+}
+
+a.right.carousel-control {
+  background: url(images/icon-right.png) 120px center no-repeat;
+}
+a.left.carousel-control {
+  background: url(images/icon-right.png) 120px center no-repeat;
+  transform: rotate(180deg);
+}
+
+.container2 h2 {
+  font-size: 41px;
+  color: #222;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+.container2 .desc {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 38px;
+}
+.nutslide,
+.update-cart,
+.actions .apply-coupon {
+  font-size: 13px;
+  color: #222;
+  text-transform: uppercase;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.nutslide {
+  transition: 0.4s;
+}
+
+/*css cho khoi 3 dichvu*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.duoi {
+  height: 1254px;
+  margin-bottom: 54px;
+}
+
+span.anh1sp {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+span.anh1sp:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.68);
+  top: 0px;
+  left: 0px;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.motsanphamchuan:hover .duoi span.anh1sp:after {
+  opacity: 1;
+}
+
+ol.carousel-indicators {
+  display: none;
+}
+
+.divdichvu {
+  height: 380px;
+  width: 100%;
+  background: url(images/05nho.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #f9eeec;
+}
+
+.divdichvu h2 a {
+  color: white;
+  border-bottom: 2px solid #f9eeec;
+  display: inline-block;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  transition: 0.4s;
+  padding-left: 13px;
+}
+
+.divdichvu h2 a:hover {
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.badichvu .row .col-sm-4:nth-child(2) .divdichvu {
+  background-image: url(images/06nho.png);
+}
+
+.badichvu .row .col-sm-4:nth-child(3) .divdichvu {
+  background-image: url(images/07nho.png);
+}
+
+.badichvu {
+  margin-top: 100px;
+}
+
+/*css chop phÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§n sÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£n phÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©m nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢i bÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­t */
+.spnoibat {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+h2.kieuchuto {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  color: #222;
+  background: url(images/deco.png) no-repeat bottom center;
+  padding-bottom: 45px;
+  margin-bottom: 41px;
+}
+.spnoibat p.mota {
+  font-size: 15px;
+  font-family: "Cabin", sans-serif;
+  line-height: 26px;
+  color: #777;
+  margin-bottom: 56px;
+}
+
+.row.gutter10 .col-sm-6 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.kngan {
+  width: 100%;
+  height: 330px;
+  margin-top: 10px;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-left: 54px;
+  color: #222;
+  background: url(images/05nho.png) #f9eeec;
+  background-size: cover;
+  transition: 0.4s;
+}
+.kngan:hover {
+  text-decoration: none;
+  padding-left: 80px;
+}
+.kngan h4 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #222;
+}
+.kngan b {
+  font-size: 13px;
+  color: #777;
+  line-height: 26px;
+}
+.kdai {
+  background-color: #ecfbf8;
+  height: 440px;
+  margin-top: 10px;
+}
+
+.row.gutter10 .col-sm-6:nth-child(1) .kngan {
+}
+.row.gutter10 .col-sm-6:nth-child(1) .kdai {
+  background-image: url(images/06nho.png);
+}
+
+.row.gutter10 .col-sm-6:nth-child(2) .kngan {
+  background-image: url(images/07nho.png);
+}
+.row.gutter10 .col-sm-6:nth-child(2) .kdai {
+  background-image: url(images/08.jpg);
+}
+
+/*css cho phan quang cao*/
+.quangcao1home {
+  margin-top: 100px;
+  height: 320px;
+  background: url(images/08.jpg) no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  background-attachment: fixed;
+}
+.qchome h2 {
+  font-size: 30px;
+  color: #222;
+  padding-bottom: 24px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+.qchome p {
+  font-size: 12px;
+  color: #777;
+  padding-bottom: 13px;
+  letter-spacing: 2px;
+}
+
+.sanphamhome {
+  margin-top: 100px;
+}
+
+/*CSS CHO PHAN HIEU UNG TAB */
+ul.tdtab {
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+ul.tdtab li b {
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #222;
+  padding: 4px 26px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  bottom: -2px;
+  transition: 0.4s;
+}
+
+ul.tdtab li b:hover,
+ul.tdtab li b.active {
+  border-bottom: 2px solid #2b2b2b;
+  color: black;
+}
+ul.tdtab li {
+  display: inline;
+}
+
+ul.ndtab {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.divsanpham {
+  position: absolute;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(200px);
+  width: 100%;
+}
+.divsanpham.xuathien {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.motsanphamchuan {
+  position: relative;
+  margin-top: 48px;
+}
+.motsanphamchuan .tren {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* background:white; */
+  padding-top: 200px;
+  width: 100%;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.motsanphamchuan:hover .tren {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tren a {
+  color: white;
+  background: rgba(0, 0, 0, 0.79);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.tren a:hover {
+  text-decoration: none;
+  background: #2a2a2a;
+}
+
+.motsanphamchuan img {
+  max-width: 100%;
+}
+
+.motsanphamchuan img:after {
+  content: "";
+  background: white;
+}
+.motsanphamchuan .duoi {
+  text-decoration: none;
+
+  color: #222;
+
+  font-family: Cabin, sans-serif;
+}
+
+.motsanphamchuan a.duoi h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 28px;
+}
+
+.motsanphamchuan a.duoi .price {
+  font-size: 17px;
+  font-weight: 900;
+  color: #222;
+  margin-top: 20px;
+}
+
+.motsanphamchuan a.duoi .cat {
+  font-size: 15px;
+  color: #777;
+  margin-top: 8px;
+  display: inline-block;
+}
+/*CSS CHO MAN HINH DI DONG ( IPAD VA IPHONE )*/
+@media (max-width: 576px) {
+  * {
+  }
+
+  .duoi {
+    height: 3780px;
+    margin-bottom: 54px;
+  }
+
+  a.kngan.kdai {
+    height: 300px;
+  }
+
+  .spnoibat {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .divdichvu {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .badichvu {
+    margin-top: 10px;
+  }
+
+  .motslide:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    background: rgba(0, 0, 0, 0.44);
+    top: 0px;
+  }
+
+  a.right.carousel-control,
+  a.left.carousel-control {
+    background-position: center;
+  }
+
+  .container2 .nutslide {
+    width: 148px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    background: white;
+  }
+
+  .container2 h2 {
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 6px;
+    /* z-index: 3; */
+    /* position: relative; */
+    color: white;
+  }
+
+  .container2 .desc {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #d1d1d1;
+  }
+
+  .navbar-toggleable-md .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .menutop ul li ul {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transition: 0s;
+  }
+
+  .navbar-toggleable-xs .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .menutop ul.nav.navbar-nav {
+    border: none;
+  }
+
+  .menutop .navbar-light .navbar-nav li > .nav-link {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px dashed rgba(128, 128, 128, 0.75);
+    border-right: none;
+  }
+
+  .thanhcc {
+    padding-top: 0px;
+  }
+
+  input.tim {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  a.cctop {
+    padding-right: 18px;
+    padding-left: 22px;
+  }
+  .menutop a.navbar-brand {
+    /* background: red; */
+    margin-top: 1px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  * {
+  }
+
+  a.cctop {
+    padding-right: 12px;
+  }
+
+  .menutop a.navbar-brand {
+  }
+}
+
+.anhava {
+  width: 150px;
+}
+
+.caunx {
+  width: 400px;
+  margin: 20px auto;
+}
+
+.anhtin {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  display: block;
+  overflow: hidden;
+  margin-top: 59px;
+}
+
+.anhtin img {
+  height: 100%;
+  width: auto;
+}
+
+.anhtin .ngaythang {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 40px;
+  background: black;
+  padding: 5px 17px;
+  color: white;
+  font-family: "open sans", sans-serif;
+  text-align: center;
+}
+
+.anhtin .ngaythang b {
+  display: block;
+  font-size: 25px;
+  color: #fafafa;
+  font-weight: 300;
+}
+.anhtin .ngaythang i {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  display: block;
+  margin-top: -1px;
+}
+
+.ndtin {
+  border: 3px solid white;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: -37px;
+  position: relative;
+  padding: 76px 37px 37px 37px;
+}
+
+.ndtin a.td1tin {
+  text-transform: uppercase;
+  color: #222;
+  text-decoration: none;
+  line-height: 26px;
+  font-family: "open sans", sans-serif;
+  margin-bottom: 26px;
+  display: block;
+}
+
+.ndtin a.rm {
+  color: #222;
+  font-size: 12px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.ndtin p {
+  font-family: cabin, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  color: #777;
+  margin-bottom: 41px;
+}
+
+.mt-100-vien {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.tinhome {
+  background: #fafafa;
+  padding-bottom: 121px;
+}
+
+.nhanemail {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.nhanemail h2 {
+  text-transform: uppercase;
+  color: #222;
+  font-family: "open sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.nhanemail p {
+  font-size: 17px;
+  line-height: 26px;
+  font-family: cabin, sans-serif;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form input.nhanmail {
+  width: 80%;
+  float: left;
+  border-radius: 0px;
+}
+
+.form input.nhanmail::-webkit-input-placeholder {
+  font-style: italic;
+  font-family: cabin, sans-serif;
+  font-size: 14px;
+}
+
+.form input[type="submit"] {
+  width: 20%;
+  background: #212121;
+  color: white;
+  float: left;
+  box-sizing: border-box;
+  font-size: 13px;
+  border-radius: 0px;
+  padding: 10px 0;
+}
+
+footer.foot {
+  background: #111;
+  color: white;
+  padding-top: 121px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer .cot1 ul a {
+  display: block;
+  color: #989898;
+  font-size: 15px;
+  font-family: Cabin, sans-serif;
+  line-height: 28px;
+}
+
+footer .cot1 ul a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.mangxh {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mangxh ul a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 5px;
+  text-align: center;
+  color: #989898;
+  border-radius: 50%;
+  border: 1px solid #989898;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.mangxh ul a:hover {
+  border-color: white;
+  background: white;
+}
+
+.thethanhtoan {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.thethanhtoan ul a {
+  display: inline-block;
+  margin-right: 35px;
+  color: #989898;
+  transition: 0.4s;
+  font-size: 32px;
+}
+
+.thethanhtoan ul a:hover {
+  color: white;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 28px;
+  color: #989898;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.bando {
+  color: #989898;
+  font-size: 13px;
+  font-family: "Open sans", sans-serif;
+}
+
+.tdfoot {
+  font-size: 18px;
+  font-family: "Open sans", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: 40px;
+}
+
+.onsale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  color: white;
+  background: #9f9f9f;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.onsale::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  top: -24px;
+  right: 42px;
+  border: 24px solid transparent;
+  border-bottom-color: #9f9f9f;
+  border-right-width: 2px;
+  border-left-width: 15px;
+}
+
+.newnew {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  color: white;
+  background: black;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.newnew::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  top: -24px;
+  left: 40px;
+  border: 24px solid transparent;
+  border-bottom-color: black;
+  border-left-width: 2px;
+  border-right-width: 15px;
+}
+
+.tren.ofs {
+  top: auto;
+  bottom: 128px;
+}
+
+.tren.ofs a {
+  width: 100%;
+  display: block;
+}
+
+.tren.ofs i {
+  display: none;
+}
+
+.ktieude {
+  height: 300px;
+  background: url(images/03.png);
+  background-size: cover;
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.ktieude::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.54);
+}
+
+.ktieudetrong {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+}
+
+.ktieudetrong .breadcrumb {
+  background: transparent;
+}
+
+.ktieudetrong h2 {
+  font-family: Cabin, sans-serif;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+}
+
+.ktieudetrong .breadcrumb a {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.tieudelistsp h3 {
+  padding-top: 95px;
+  font-size: 25px;
+  color: #222;
+  line-height: 26px;
+  padding-bottom: 51px;
+  background: url(images/bg_tdsp.png) repeat-x bottom;
+  padding-bottom: 50px;
+  margin-bottom: 41px;
+}
+
+.tieudelistsp .nutgrid,
+.tieudelistsp .nutlist {
+  border-radius: 0px;
+  border-color: #cecece;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 10px 24px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.tieudelistsp .nutgrid:hover,
+.tieudelistsp .nutlist:hover {
+  background: #ecfbf8;
+  border-color: #ecfbf8;
+}
+
+.tieudelistsp .show {
+  line-height: 26px;
+  display: block;
+  font-size: 14px;
+  padding: 10px 0;
+  color: #222;
+}
+
+.woocommerce-ordering select.orderby {
+  padding: 10px 24px;
+  color: #222;
+}
+
+.woocomerce-pagination {
+  text-align: center;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.woocomerce-pagination ul {
+  list-style: none;
+  display: inline;
+}
+
+.woocomerce-pagination ul li {
+  display: inline;
+}
+
+.woocomerce-pagination .page-numbers {
+  color: #222;
+  font-size: 15px;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.woocomerce-pagination .page-numbers.current,
+.woocomerce-pagination .page-numbers:hover {
+  background: #222;
+  color: white;
+  text-decoration: none;
+}
+
+.sanpham {
+  margin-top: 100px;
+}
+
+.bigimage {
+  width: 77%;
+  display: block;
+  float: left;
+  margin-right: 3%;
+}
+
+.bigimage img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.thumbnails {
+  width: 20%;
+  float: left;
+}
+
+.anhnho {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.anhnho img {
+  width: 100%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 1px transparent;
+  transition: 0.4s;
+}
+
+.anhnho img:hover {
+  box-shadow: 0 0 0 1px black;
+}
+
+.product-title {
+  color: #222;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.price {
+  color: #222;
+  font-size: 25px;
+  line-height: 26px;
+  font-family: Cabin, sans-serif;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.description {
+  margin-top: 46px;
+  font-size: 15px;
+  font-family: Cabin, sans-serif;
+  line-height: 26px;
+  color: #777;
+}
+
+.in-stock {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: black;
+  font-family: Cabin, sans-serif;
+  font-weight: 400;
+  margin-top: 45px;
+}
+
+.cart {
+  margin-top: 30px;
+}
+
+.quantity {
+  width: 190px;
+  float: left;
+}
+
+.variation {
+  width: calc(100% - 190px);
+  float: left;
+}
+
+.label {
+  font-weight: 900;
+  color: #222;
+  font-size: 13px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+.button.btn-primary {
+  margin-top: 26px;
+}
+
+.qty::-webkit-inner-spin-button,
+.qty::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.qty {
+  width: 48px;
+  height: 38px;
+  border: none;
+  background: #444;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  line-height: 38px;
+}
+
+.plus,
+.minus {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  background: white;
+  box-shadow: none;
+  border: 1px solid #d0d0d0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.minus {
+  right: -5px;
+  bottom: -1px;
+}
+
+.plus {
+  left: -5px;
+  bottom: -1px;
+}
+
+.button.btn.btn-primary {
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  height: 50px;
+  width: 100%;
+  border-radius: 0;
+  background: #222;
+  font-family: Cabin, sans-serif;
+  margin-top: 40px;
+}
+
+.tabspchitiet {
+  margin-top: 60px;
+  min-height: 315px;
+  padding-bottom: 20px;
+  background: url(images/bg_tdsp.png) repeat-x bottom;
+}
+
+.tabspchitiet ul {
+  list-style: none;
+}
+
+.tabspchitiet ul.tabs li {
+  display: inline;
+}
+
+.tabspchitiet ul.tabs a {
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 26px;
+  color: #333;
+  padding: 8px 0;
+  margin-left: 35px;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.tabspchitiet ul.tabs li:first-child a {
+  margin-left: 0;
+}
+
+.tabspchitiet ul.tabs li.active a,
+.tabspchitiet ul.tabs a:hover {
+  border-color: #333;
+  text-decoration: none;
+}
+
+.tabspchitiet .tabsanpham {
+  position: absolute;
+  line-height: 26px;
+  color: #777;
+  font-size: 13px;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  height: 220px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.tabspchitiet .tabsanpham.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.related-products {
+  margin-bottom: 100px;
+}
+
+.mottinchuan .anhtin {
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.mottinchuan .anhtin img {
+  height: auto;
+  width: 100%;
+}
+
+.mottinchuan .anhtin:hover .ngaythang {
+  transition: 0.4s;
+  background: #777;
+}
+
+.noidungtin {
+  padding: 0 20px 50px 10px;
+}
+
+.noidungtin h3 a {
+  font-size: 18px;
+  line-height: 26px;
+  color: #222;
+  font-family: Cabin, sans-serif;
+  text-transform: uppercase;
+}
+
+.noidungtin h3 a:hover {
+  text-decoration: none;
+}
+
+.thongsotin {
+  font-size: 14px;
+  line-height: 26px;
+  color: #777;
+  font-family: Cabin, sans-serif;
+  font-style: italic;
+}
+
+.trichdan {
+  color: #777;
+  font-size: 15px;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+.rmtin {
+  color: #222;
+  font-family: Cabin, sans-serif;
+  font-size: 13px;
+  line-height: 26px;
+  margin-top: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.rmtin i {
+  padding-left: 10px;
+  transition: 0.4s;
+}
+
+.rmtin:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+.rmtin:hover i {
+  padding-left: 20px;
+}
+
+.listtin .ktieude {
+  margin-bottom: 50px;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-field {
+  height: 45px;
+  padding: 15px;
+  border: 1px solid #777;
+  width: 100%;
+  background: url(images/iconsearch.png) no-repeat 94% center;
+}
+
+.search-submit {
+  height: 45px;
+  width: 16%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  border: none;
+  text-indent: 99999px;
+  cursor: pointer;
+}
+
+.widget {
+  margin-top: 40px;
+  border: 1px solid #ededed;
+}
+
+.widget-title {
+  text-align: center;
+  background: #222;
+  color: white;
+  font-family: cabin, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 56px;
+  line-height: 56px;
+}
+
+.widget ul {
+  list-style: none;
+  margin: 0;
+}
+
+.widget ul li a {
+  font-family: cabin, sans-serif;
+  font-size: 14px;
+  color: #777;
+  padding: 12px 17px;
+  display: block;
+  border-bottom: 1px solid #ededed;
+  transition: 0.4s;
+  position: relative;
+  padding-left: 25px;
+}
+
+.widget ul li a:hover {
+  color: #222;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.widget ul li a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid #ededed;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+
+.widget ul li a:hover::before {
+  border-color: #222;
+}
+
+.widget ul li:last-child a {
+  border-bottom: none;
+}
+
+.widget .so {
+  float: right;
+}
+
+.mottinnho {
+  display: block;
+  overflow: hidden;
+  padding: 0 25px;
+  height: 80px;
+  font-family: Cabin, sans-serif;
+  font-size: 13px;
+  color: #777;
+}
+
+.mottinnho img {
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+}
+
+.mottinnho b {
+  display: block;
+  line-height: 16px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.mottinnho i {
+  color: #222;
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.shop-table thead {
+  border: 1px solid #ebebeb;
+}
+
+.shop-table thead th {
+  background: #f6f6f6;
+  text-align: center;
+  font-size: 13px;
+  color: #222;
+  text-transform: uppercase;
+  padding: 23px;
+  border-right: 1px solid #ebebeb;
+}
+
+.cart-item td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.product-thumbnail img {
+  width: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #ebebeb;
+}
+
+.shop-table {
+  border: 1px solid #ebebeb;
+}
+
+.giohangchitiet {
+  margin-bottom: 50px;
+}
+
+.giohangchitiet h1 {
+  font-family: Cabin, sans-serif;
+  font-size: 25px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 50px;
+}
+
+.product-remove i {
+  cursor: pointer;
+}
+
+.actions .apply-coupon,
+.actions .update-cart,
+.checkout-button {
+  background: #222;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.actions .update-cart:hover {
+  background: #777;
+}
+
+.actions .apply-coupon {
+  width: auto;
+  padding: 0 13px;
+  display: inline-block;
+}
+
+.cpc {
+  float: right;
+}
+
+.couponcode {
+  padding: 12px 13px;
+  position: relative;
+  right: -5px;
+  border: 1px solid #ccc;
+}
+
+.cart-total h2 {
+  font-size: 25px;
+  font-family: Cabin, sans-serif;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.cart-total .container .col-sm-5 {
+  padding: 0;
+}
+
+.cart-total .shop-table th {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.cart-total .shop-table .order-total th {
+  font-size: 18px;
+}
+
+.cart-total td {
+  color: #777;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 45px;
+}
+
+.shipping-method {
+  list-style: none;
+  margin: 0;
+}
+
+.shipping-method li label {
+  font-weight: normal;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.checkout-button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 16px;
+}
+
+.checkout-button i {
+  transition: 0.4s;
+  padding-left: 10px;
+  opacity: 0;
+}
+
+.checkout-button:hover {
+  background: #777;
+  text-decoration: none;
+  color: white;
+}
+
+.checkout-button:hover i {
+  opacity: 1;
+  padding-left: 20px;
+}
+
+.form-row.form-row-first {
+  width: 47%;
+  float: left;
+}
+
+.form-row.form-row-last {
+  width: 47%;
+  float: right;
+}
+
+.form-row label {
+  display: block;
+  text-transform: uppercase;
+  font-family: Cabin, sans-serif;
+  font-size: 13px;
+  color: #333;
+  line-height: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form-row label.checkbox {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+.form-row .input-text {
+  width: 100%;
+  font-size: 14px;
+  font-family: Cabin, sans-serif;
+  padding: 11px 12px;
+  color: #a1a1a1;
+}
+
+.form-row {
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.checkout .input-checkbox {
+  display: inline-block;
+  float: left;
+  margin-top: 15px;
+}
+
+.checkout h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 45px;
+    color: #333;
+    margin-top: 40px;
+}
+
+.checkout textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: Cabin, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    min-height: 100px;
+}
+
+#order_review.xemlaihoadon {
+    background: #f6f6f6;
+    padding: 25px;
+}
+
+#order_review.xemlaihoadon .shop-table {
+    background: white;
+    margin: 0;
+    border: none;
+}
+
+#order_review.xemlaihoadon .shop-table thead th {
+    background: transparent;
+    border-bottom: 1px solid #414141;
+    text-align: left;
+    border-right: none;
+}
+
+#order_review.xemlaihoadon .shop-table thead th.product-name {
+    width: 70%;
+}
+
+#payment {
+    background: white;
+    padding-top: 45px;
+    margin-top: 40px;
+}
+
+#order_review .cart-item td {
+    text-align: left;
+    padding-left: 25px;
+}
+
+#order_review tfoot tr.sub-total th,
+#order_review tfoot tr.sub-total td {
+    padding-top: 40px;
+}
+
+#order_review tfoot tr.shipping td,
+#order_review tfoot tr.order-total td {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+#order_review tfoot tr.sub-total th {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+#payment ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+#payment ul li label {
+    color: #414141;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#payment .payment-box {
+    padding-left: 27px;
+    padding-bottom: 20px;
+}
+
+#place_order {
+    background: #222;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 16px;
+}
