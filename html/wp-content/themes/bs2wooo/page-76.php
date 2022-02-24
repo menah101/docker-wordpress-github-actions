@@ -220,14 +220,99 @@
     <!--  HET QUANG CAO TRANG HOME -->
 
 
-    <!-- TEST -->
-    <div class="container">
-      <div class="test">
-        <h1 class="display-3 text-xs-center">Khối Test</h1>
-        <div class="noidung">
-          <?php echo do_shortcode('[recent_products per_page="12"]'); ?>
+    <?php 
+      // Tiêu đề Tab
+      $tieudetab = get_field('tieu_de_tab');
+      $tichdantab = get_field('trich_dan_tab');
+
+      // Phần 4 tab sản phẩm
+      $tieudekhoitab1 = get_field('tieu_de_khoi_tab_1');
+      $tieudekhoitab2 = get_field('tieu_de_khoi_tab_2');
+      $tieudekhoitab3 = get_field('tieu_de_khoi_tab_3');
+      $tieudekhoitab4 = get_field('tieu_de_khoi_tab_4');
+      $soluongsanphamtab = get_field('so_luong_san_pham_cho_moi_tab');
+
+      // Phân nút view all products
+      $tennutviewall = get_field('name_button_view_all');
+      $linknutviewall = get_field('link_button_view_all');
+      
+    ?>
+
+    <div class="sanphamhome">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 push-sm-2">
+            <div class="text-xs-center">
+              <h2 class="kieuchuto"><?php echo $tieudetab; ?></h2>
+              <p class="mota">
+              <?php echo $tichdantab; ?>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="tabsanpham">
+        <div class="tren">
+          <ul class="tdtab">
+            <li><b> <?php echo $tieudekhoitab1; ?> </b></li>
+            <li><b class="active"> <?php echo $tieudekhoitab2; ?> </b></li>
+            <li><b> <?php echo $tieudekhoitab3; ?> </b></li>
+            <li><b> <?php echo $tieudekhoitab4; ?> </b></li>
+          </ul>
+        </div>
+        <!-- HET TREN -->
+        <div class="duoi">
+          <div class="container">
+            <ul class="ndtab">
+              <li>
+                <div class="divsanpham">
+                  <div class="row">
+                    <?php echo do_shortcode('[featured_products per_page="'.$soluongsanphamtab.'"]'); ?>
+                  </div>
+                  <!-- het row -->
+                </div>
+              </li>
+
+              <li>
+                <div class="divsanpham xuathien">
+                  <div class="row">
+                    <?php echo do_shortcode('[recent_products per_page="'.$soluongsanphamtab.'"]'); ?>
+                  </div>
+                  <!-- het row -->
+                </div>
+              </li>
+
+              <li>
+                <div class="divsanpham">
+                  <div class="row">
+                    <?php echo do_shortcode('[product_category category="nam" per_page="'.$soluongsanphamtab.'"]'); ?>
+                  </div>
+                  <!-- het row -->
+                </div>
+              </li>
+
+              <li>
+                <div class="divsanpham">
+                  <div class="row">
+                  <?php echo do_shortcode('[product_category category="nữ" per_page="'.$soluongsanphamtab.'"]'); ?>
+                  </div>
+                  <!-- het row -->
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- HET CONTAINER -->
+        </div>
+        <!-- HET DUOI -->
+      </div>
+      <!-- het tab san pham   -->
+      <div class="divnutviewall">
+        <a href="<?php echo $linknutviewall; ?>" class="nutslide btn btn-outline-secondary">
+          <?php echo $tennutviewall; ?> <i class="fa fa-long-arrow-right"></i>
+        </a>
+      </div>
     </div>
+    <!-- HET SANPHAM HOME  -->
 
 <?php get_footer(); ?>

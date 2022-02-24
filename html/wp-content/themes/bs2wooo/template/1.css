@@ -23,7 +23,7 @@ input.tim::-webkit-input-placeholder {
 
 a.cctop {
     display: inline-block;
-    color: #888;
+    color: #888 !important;
     font-family: 'Open Sans', sans-serif;
     line-height: 28px;
     font-size: 12px;
@@ -167,7 +167,7 @@ a.left.carousel-control {
 }
 .nutslide, input.update_cart, .actions .apply_coupon {
     font-size: 13px;
-    color:#222;
+    color:#222 !important;
     text-transform: uppercase;
     width: 180px;
     height: 50px;
