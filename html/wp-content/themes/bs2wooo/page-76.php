@@ -219,4 +219,15 @@
     </div>
     <!--  HET QUANG CAO TRANG HOME -->
 
+
+    <!-- TEST -->
+    <div class="container">
+      <div class="test">
+        <h1 class="display-3 text-xs-center">Khối Test</h1>
+        <div class="noidung">
+          <?php echo do_shortcode('[recent_products per_page="12"]'); ?>
+        </div>
+      </div>
+    </div>
+
 <?php get_footer(); ?>

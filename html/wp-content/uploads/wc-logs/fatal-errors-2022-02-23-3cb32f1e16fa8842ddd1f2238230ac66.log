@@ -1,0 +1,16 @@
+2022-02-23T04:52:49+00:00 CRITICAL syntax error, unexpected ':', expecting ';' in /var/www/html/wp-content/themes/bs2wooo/functions.php on line 53
+
+2022-02-23T04:52:49+00:00 CRITICAL syntax error, unexpected ':', expecting ';' in /var/www/html/wp-content/themes/bs2wooo/functions.php on line 53
+
+2022-02-23T06:39:58+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /var/www/html/wp-content/themes/bs2wooo/functions.php:72
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(303): themdanhmuc('')
+#1 /var/www/html/wp-includes/class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/wp-includes/plugin.php(470): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-content/themes/bs2wooo/woocommerce/content-product.php(59): do_action('woocommerce_aft...')
+#4 /var/www/html/wp-includes/template.php(772): require('/var/www/html/w...')
+#5 /var/www/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/w...', false)
+#6 /var/www/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-products.php(660): wc_get_template_part('content', 'product')
+#7 /var/www/html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-products.php(100): WC_Shortcode_Products->product_loop()
+#8 /var/www/html/wp-content/plugins/woo in /var/www/html/wp-content/themes/bs2wooo/functions.php on line 72
+

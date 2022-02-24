@@ -21,6 +21,100 @@ if ( ! defined( '_S_VERSION' ) ) {
  */
 function bs2wooo_setup() {
 
+	// Bỏ phần đánh giá sao của sản phẩm
+	remove_action('woocommerce_after_shop_loop_item_title','woocommerce_template_loop_rating',5);
+	// Xử lý phần link dưới
+	if ( ! function_exists( 'woocommerce_template_loop_product_link_open' ) ) {
+		/**
+		 * Insert the opening anchor tag for products in the loop.
+		 */
+		function thaylink() {
+			global $product;
+	
+			$link = apply_filters( 'woocommerce_loop_product_link', get_the_permalink(), $product );
+	
+			echo '<a href="' . esc_url( $link ) . '" class="duoi">';
+		}
+	}
+	// Remove cái hook cũ đi
+	remove_action('woocommerce_before_shop_loop_item','woocommerce_template_loop_product_link_open',10);
+	// Add cái hook mới vào
+	add_action('woocommerce_before_shop_loop_item', 'thaylink', 10);
+
+	// Xử lý thumbnail
+	function thayanh( $size = 'woocommerce_thumbnail', $deprecated1 = 0, $deprecated2 = 0 ) {
+		global $product;
+
+		$image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
+		$output = '<span class="anh1sp">';
+		$output .= $product->get_image( $image_size );
+		$output .= '</span>';
+
+		echo $product ? $output : '';
+	}
+	remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+	add_action('woocommerce_before_shop_loop_item_title', 'thayanh', 10);
+
+	// Xử lý tiêu đề sản phẩm
+	function tieudesanpham() {
+		echo '<h3 data-class="' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . get_the_title() . '</h3>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
+	remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
+	add_action('woocommerce_shop_loop_item_title', 'tieudesanpham', 10);
+
+	// Xử lý danh mục sản phẩm
+	function themdanhmuc() {
+		global $product;
+		$danhmuc = wp_get_post_terms($product->id, 'product_cat');
+
+		foreach($danhmuc as $tungdanhmuc) {
+			echo '<span class="cat">';
+			echo $tungdanhmuc->name;
+			echo '</span>';
+		}
+	}
+	add_action('woocommerce_after_shop_loop_item_title', 'themdanhmuc', 1);
+
+	// Xử lý hết hàng trong kho
+	function xulyhethang( $args = array() ) {
+		global $product;
+		if(!$product->is_in_stock()) {
+			echo '<div class="tren ofs"><a href="">Tạm Hết Hàng <i class="fa fa-long-arrow-right"></i></a></div>';
+		}
+		elseif ( $product ) {
+			$defaults = array(
+				'quantity'   => 1,
+				'class'      => implode(
+					' ',
+					array_filter(
+						array(
+							'button',
+							'product_type_' . $product->get_type(),
+							$product->is_purchasable() && $product->is_in_stock() ? 'add_to_cart_button' : '',
+							$product->supports( 'ajax_add_to_cart' ) && $product->is_purchasable() && $product->is_in_stock() ? 'ajax_add_to_cart' : '',
+						)
+					)
+				),
+				'attributes' => array(
+					'data-product_id'  => $product->get_id(),
+					'data-product_sku' => $product->get_sku(),
+					'aria-label'       => $product->add_to_cart_description(),
+					'rel'              => 'nofollow',
+				),
+			);
+
+			$args = apply_filters( 'woocommerce_loop_add_to_cart_args', wp_parse_args( $args, $defaults ), $product );
+
+			if ( isset( $args['attributes']['aria-label'] ) ) {
+				$args['attributes']['aria-label'] = wp_strip_all_tags( $args['attributes']['aria-label'] );
+			}
+
+			wc_get_template( 'loop/add-to-cart.php', $args );
+		}
+	}
+	remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+	add_action('woocommerce_after_shop_loop_item', 'xulyhethang', 10);
+
 	// Kích hoạt tính năng hỗ trợ Woocommerce
 	add_theme_support('woocommerce');
 
