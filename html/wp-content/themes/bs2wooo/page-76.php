@@ -315,4 +315,113 @@
     </div>
     <!-- HET SANPHAM HOME  -->
 
+    <div class="commentkhachhang mt-100-vien  wow fadeInDownBig">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 push-sm-2">
+ 				<div class="text-xs-center">
+	 				<h2 class="kieuchuto">TESTIMONIALS</h2>
+	 				 
+ 				</div>
+ 			</div>
+			</div>
+		</div>
+
+		<div id="slidecamnhan" class="carousel slide" data-ride="carousel">
+	 				<ol class="carousel-indicators">
+	 					<li data-target="#slidecamnhan" data-slide-to="0" class="active"></li>
+	 					<li data-target="#slidecamnhan" data-slide-to="1"></li>
+	 					<li data-target="#slidecamnhan" data-slide-to="2"></li>
+	 				</ol>
+	 				<div class="carousel-inner" role="listbox">
+            <?php
+              $du_lieu_cam_nhan_nguoi_dung = new WP_Query(array('post_type' => 'cam_nhan_nguoi_dung'));
+              $dem_so_slide = 0;
+              while($du_lieu_cam_nhan_nguoi_dung->have_posts()) 
+              {
+                $du_lieu_cam_nhan_nguoi_dung->the_post();
+                $dem_so_slide++;
+                $anh_avatar = get_field('anh_avatar');
+                $d1 = get_field('nghe_nghiep_nguoi_dung');
+            ?>
+	 					<div class="carousel-item <?php if($dem_so_slide == 1) {echo "active";} ?>">
+	 						<div class="motslidecn text-xs-center">
+	 							<img src="<?php echo $anh_avatar; ?>" alt="" class="anhava">
+	 							<div class="caunx"><?php the_content(); ?></div>
+	 							<h4 class="tentg"> <?php the_title(); ?></h4>
+	 							<p class="nghe"><?php echo $d1; ?></p>
+	 						</div>  <!-- HET 1 SLIDE CN -->
+	 					</div>
+
+             <?php
+              }
+              wp_reset_query(); // cắt đứt vòng lặp, sẽ không ảnh hưởng tới những đoạn mã khác
+             ?>
+	 				
+	 					 
+	 				</div>
+	 				<a class="left carousel-control" href="#slidecamnhan" role="button" data-slide="prev">
+	 					 
+	 					<span class="sr-only">Previous</span>
+	 				</a>
+	 				<a class="right carousel-control" href="#slidecamnhan" role="button" data-slide="next">
+	 				 
+	 					<span class="sr-only">Next</span>
+	 				</a>
+	</div> 	
+
+  </div>   <!-- HET PHAN COMMENT KHACH HANG -->
+
+  <?php 
+      // Tiêu đề Tab
+      $tieudenews = get_field('tieu_de_khoi_tin_tuc');
+      $tichdannews = get_field('tich_dan_khoi_tin_tuc');
+  ?>
+
+  <div class="tinhome mt-100-vien">
+	<div class="container">
+		<div class="row">
+ 			<div class="col-sm-8 push-sm-2  wow fadeInDownBig">
+ 				<div class="text-xs-center">
+	 				<h2 class="kieuchuto"><?php echo $tieudenews; ?></h2>
+	 				<p class="mota"><?php echo $tichdannews; ?></p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="row  wow fadeInDownBig">
+ 			<div class="col-sm-6">
+ 				<a href="" class="anhtin">
+ 					<img src="images/anhtin.jpg" alt="" class="">
+ 					<div class="ngaythang">
+ 						<b>11</b>
+ 						<i>JAN</i>
+ 					</div>
+ 				</a>
+ 				<div class="ndtin">
+ 					<a href="" class="td1tin">Sunday Monday Happy Days</a>
+ 					<p>Here everyone one two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated  the others comfortable nest started from this tropic port.</p>
+ 					<a href="" class="rm">READ MORE <i class="fa fa-long-arrow-right"></i></a>
+ 				</div>
+ 			</div>
+ 			<div class="col-sm-6">
+ 				<a href="" class="anhtin">
+ 					<img src="images/anhtin.jpg" alt="" class="">
+ 					<div class="ngaythang">
+ 						<b>11</b>
+ 						<i>JAN</i>
+ 					</div>
+ 				</a>
+ 				<div class="ndtin">
+ 					<a href="" class="td1tin">Sunday Monday Happy Days</a>
+ 					<p>Here everyone one two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated  the others comfortable nest started from this tropic port.</p>
+ 					<a href="" class="rm">READ MORE <i class="fa fa-long-arrow-right"></i></a>
+ 				</div>
+ 			</div>
+
+ 		</div>
+	</div>
+</div> <!-- HET TIN HOME -->
+
+
+
 <?php get_footer(); ?>
